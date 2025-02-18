@@ -1,5 +1,7 @@
 /* src/App.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap'); /* Import Gravitas One font */
+
 body {
     background-image: url('./Dark-Gradient-08.png'); /* Set the gradient background image */
     background-size: cover; /* Cover the entire background */
@@ -21,6 +23,28 @@ body {
     text-transform: uppercase; /* Optional: Transform text to uppercase */
     font-size: 3em; /* Increased font size for the header */
     margin-bottom: 20px; /* Add space below the header */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.pokemon-image {
+    width: 150px; /* Increased width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Space between the title and the image */
+}
+
+/* Responsive Design for the image */
+@media (max-width: 600px) {
+    .pokemon-image {
+        width: 50px; /* Smaller size for mobile screens */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .pokemon-image {
+        width: 60px; /* Adjust size for medium screens */
+    }
 }
 
 input[type="text"] {
