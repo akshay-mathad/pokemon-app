@@ -1,0 +1,21 @@
+/* src/components/PokemonList.css */
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center the cards */
+    padding: 10px; /* Padding around the list */
+    gap: 20px; /* Space between cards */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .pokemon-list {
+        gap: 10px; /* Reduce gap on small screens */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .pokemon-list {
+        gap: 15px; /* Adjust gap for medium screens */
+    }
+}
